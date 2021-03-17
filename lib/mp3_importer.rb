@@ -1,15 +1,14 @@
 require 'pry'
 
 class MP3Importer
-  attr_reader :path
+  attr_reader :path, :files
 
 def initialize(path)
   @path = path
 end
 
 def files
-  @files = Dir.entries(path)
-  @files = @files.collect {|x| x.include?".mp3"}
+  @files = Dir.entries(path).collect {|x| x.include?".mp3"}
   binding.pry
 end
 
