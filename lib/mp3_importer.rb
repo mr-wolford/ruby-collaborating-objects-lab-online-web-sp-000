@@ -5,7 +5,7 @@ def initialize(path)
   @path = path
 end
 
-def self.files
+def files
   Dir.open(path)
 end
 
