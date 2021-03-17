@@ -8,8 +8,7 @@ def initialize(path)
 end
 
 def files
-  @files = Dir.glob("#{path}/*.mp3").collect {|x| x.include?".mp3"}
-  binding.pry
+  @files = Dir.glob("#{path}/*.mp3")
 end
 
 def self.import
