@@ -6,7 +6,7 @@ def initialize(path)
 end
 
 def files
-  Dir.open(path)
+  @files = Dir.open(path)
 end
 
 def self.import
