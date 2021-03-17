@@ -8,7 +8,7 @@ def initialize(path)
 end
 
 def files
-  @files = Dir.glob("#{path}/*.mp3")
+  @files = Dir.glob("#{path}/*.mp3").collect{ |x| x.gsub("#{path}", "")}
 end
 
 def self.import
