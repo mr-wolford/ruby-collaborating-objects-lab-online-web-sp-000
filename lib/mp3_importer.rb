@@ -9,6 +9,7 @@ end
 
 def files
   @files = Dir.entries(path)
+  @files.collect {|x| x.include?".mp3"}
   binding.pry
 end
 
