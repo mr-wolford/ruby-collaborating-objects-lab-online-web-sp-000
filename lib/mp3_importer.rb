@@ -6,7 +6,7 @@ def initialize(path)
 end
 
 def self.files
-  @path = Dir.children("/path/to/search/.mp3")
+  Dir.children("/path/to/search/.mp3")
 end
 
 def self.import
