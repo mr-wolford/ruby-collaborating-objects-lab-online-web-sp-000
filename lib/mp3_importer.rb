@@ -8,7 +8,7 @@ def initialize(path)
 end
 
 def files
-  @files = Dir.entries(path).collect {|x| x.include?".mp3"}
+  @files = Dir.glob("#{path}/*.mp3").collect {|x| x.include?".mp3"}
   binding.pry
 end
 
