@@ -12,7 +12,7 @@ def files
 end
 
 def import
-  files.each{ |f| Song.new_by_filename(f)}
+  self.files.each{ |f| Song.new_by_filename(f)}
 end
 
 end
